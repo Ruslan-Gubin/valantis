@@ -7,7 +7,7 @@ export const baseFeth = async ({
   method = "POST",
 }: BaseFethOptionType) => {
   const password = "Valantis";
-  const baseUrl = new URL("https://api.valantis.store:41000/");
+  const baseUrl = new URL(BACKEND_URL);
 
   const payload = {
     action,
