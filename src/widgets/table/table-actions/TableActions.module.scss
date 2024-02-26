@@ -1,0 +1,42 @@
+.actionCellContainer {
+  padding: 0 16px;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.actionButtonItem {
+  background-color: #5664d2;
+  border-radius: 8px;
+  padding: 1px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.157);
+
+  &:hover {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.212);
+  }
+  &:active {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.329);
+    background-color: #6877ed;
+  }
+}
+
+.actionButtonItemTresh {
+  background-color: #D32F2F;
+  &:active {
+    background-color: #eb4848;
+  }
+}
+
+.actionButtonItemGray {
+  opacity: .2;
+  cursor: default;
+  &:active {
+    opacity: .2;
+  }
+}

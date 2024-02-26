@@ -1,0 +1,80 @@
+@use "../../app/styles/common/var";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.button {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.filterContent {
+  position: absolute;
+  top: 92px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.29);
+  border-radius: 6px;
+  display: flex;
+  padding: 16px;
+  column-gap: 16px;
+  flex-direction: column;
+  row-gap: 16px;
+  min-width: 250px;
+}
+
+.filterLabel {
+  display: flex;
+  flex-direction: column;
+  color: #727272;
+  font-size: 14px;
+  row-gap: 7px;
+}
+
+.filterInput {
+  font-size: 16px;
+  color: #172b4db5;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.097);
+  &:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+  }
+  &:focus {
+    border-bottom: 2px solid var.$bg-header;
+  }
+}
+
+.footerButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.cancelButton {
+  height: 29px;
+  background-color: #d32f2f;
+  padding: 4px 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.searchButton {
+  height: 29px;
+  background-color: var.$bg-header;
+  padding: 4px 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}

@@ -1,0 +1,43 @@
+.pagination {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.paginationPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  opacity: 0.4;
+}
+
+
+.paginationPageWhite {
+  cursor: default;
+  opacity: 1;
+}
+
+.paginationButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0);
+  margin-right: 8px;
+  color: white;
+}
+
+.paginationButton:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+.paginationButtonOpasit {
+  opacity: 0.2;
+  cursor: default;
+  color: white;
+}

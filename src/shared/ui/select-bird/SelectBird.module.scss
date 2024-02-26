@@ -1,0 +1,37 @@
+%array {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: #a3a3a3;
+}
+
+.dropdown_selected__toggle {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0);
+   z-index: 1;
+  cursor: pointer;
+  &::before {
+    @extend %array;
+    top: 9px;
+    left: 3px;
+    rotate: (35deg);
+  }
+  &::after {
+    @extend %array;
+    top: 9px;
+    left: 9px;
+    rotate: (-35deg);
+  }
+}
+
+.dropdown_selected__active {
+  &::before {
+    rotate: (-35deg);
+  }
+  &::after {
+    rotate: (35deg);
+  }
+}

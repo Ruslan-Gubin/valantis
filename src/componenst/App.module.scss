@@ -1,0 +1,16 @@
+
+@font-face {
+  font-family: 'Geometria';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('../../public/fonts/Geometria-Bold.ttf') format('ttf'),
+    url('../../public/fonts/Geometria-Bold.ttf') format('woff');
+}
+
+
+.button {
+  font-family: Geometria;
+  background-color: orange;
+  color: white;
+}

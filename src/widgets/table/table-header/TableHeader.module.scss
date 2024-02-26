@@ -1,0 +1,20 @@
+@use '../../../app/styles/common/var';
+
+.tableHeaderList {
+  border-bottom: 1px solid var.$border-card;
+  display: grid;
+  column-gap: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: var.$bg-header;
+  color: white;
+  height: var.$table-header-height;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
+}
+
+.headerItem {
+  padding: 0 16px;
+}

@@ -1,0 +1,17 @@
+.root {
+  border: 1px solid green;
+}
+
+
+.tableHeaderList {
+  border: 1px solid orange;
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  padding: 20px;
+  background-color: red;
+}
+
+.headerItem {
+  color: red;
+}

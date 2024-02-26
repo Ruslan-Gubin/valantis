@@ -1,0 +1,16 @@
+@forward "common/libs";
+@forward "common/fonts/fonts";
+
+body {
+  font-family: "Geometria", "Helvetica", "Arial", sans-serif;
+  color: #172b4d;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4;
+    border-radius: 10px;
+  }
+}

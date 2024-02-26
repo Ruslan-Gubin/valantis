@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "ESNext",
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    "outDir": "./build/", 
+    "noImplicitAny": true,
+  
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    "noPropertyAccessFromIndexSignature": false, //ругается на styles.button...
+    "noUnusedLocals": false, // запрещает оставлять неиспользуемый код
+
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": ["src/**/*.tsx", "src/**/*.ts"],
+  "exclude": ["node_modules", "src/**/*.test.ts"]
+}

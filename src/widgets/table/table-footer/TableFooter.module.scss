@@ -1,0 +1,16 @@
+@use '../../../app/styles/common/var';
+
+.tableFooterContainer {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var.$bg-header;
+  color: white;
+  height: var.$table-header-height;
+}
+
+.paginationContainer {
+  display: flex;
+  column-gap: 10px;
+}

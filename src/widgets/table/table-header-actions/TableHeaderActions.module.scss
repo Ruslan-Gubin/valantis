@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.root {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 10px;
+
+}
